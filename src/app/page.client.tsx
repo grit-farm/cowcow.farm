@@ -6,7 +6,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import GameIllustration from "../../public/images/landing/game-illustration.svg";
-import FormIllustration from "../../public/images/landing/form-illustration.svg";
 import OurTeachers from "../../public/images/landing/our-teachers.png";
 import BookIllustration from "../../public/images/landing/book-illustration.svg";
 import TimeIllustration from "../../public/images/landing/time-illustration.svg";
@@ -15,23 +14,33 @@ import TalkIllustration from "../../public/images/landing/talk-illustration.svg"
 import ChatIllustration from "../../public/images/landing/chat-illustration.svg";
 import Game from "../../public/images/landing/game.png";
 import ApplyIllustration from "../../public/images/landing/apply-illustration.svg";
-
+/**
+ * 랜딩 페이지 가이드, tailwind
+ * content: max-w-7xl
+ * color-primary: blue-500
+ * h2: text-4xl, font-bold > mobile 2xl
+ * h3: text-2xl, font-semibold > mobile xl
+ * p: text-xl text-base
+ * m: 4, 8, 12 ...
+ * illustration: height-400
+ */
 const ClientPage = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <div className="bg-neutral-50">
-        <div className="flex justify-between items-center max-w-7xl mx-auto">
+        <div className="flex md:flex-row flex-col justify-between items-center max-w-7xl mx-auto">
           <div className="px-4 py-12">
-            <h2 className="font-bold text-4xl">
-              억지 영어 공부는 그만!
-              <br />
-              신나게 게임하면서 배우는 진짜 영어
+            <h2 className="font-bold md:text-4xl text-2xl">
+              <p>억지 영어 공부는 그만!</p>
+              <p className="mt-4">신나게 게임하면서 배우는 진짜 영어</p>
             </h2>
-            <p className="text-neutral-700 mt-2">
-              명문대학, 대기업 출신 선생님과 함께 게임을 즐기다보면 <br />
-              부담과 두려움을 사라지고, 자연스럽게 영어를 배울 수 있습니다.
-            </p>
-            <button className="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-8 rounded">
+            <div className="text-neutral-700 mt-8 md:text-xl text-base">
+              <p>명문대학, 대기업 출신 선생님과 함께 게임을 즐기다보면</p>
+              <p className="mt-4">
+                부담과 두려움을 사라지고, 자연스럽게 영어를 배울 수 있습니다.
+              </p>
+            </div>
+            <button className="mt-8 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-8 rounded">
               무료체험
             </button>
           </div>
@@ -39,102 +48,105 @@ const ClientPage = () => {
             <Image
               src={GameIllustration}
               alt="억지 영어 공부는 그만!"
-              height={300}
+              className="md:block hidden"
+              height={400}
             />
           </div>
         </div>
       </div>
-      <article className="flex flex-col max-w-7xl mx-auto">
+      <article className="flex flex-col max-w-7xl mx-auto  px-4">
         <div className="flex flex-col items-center text-center mt-24">
-          <h2 className="text-4xl font-bold">Our Teachers</h2>
-          <div className="mt-16">
+          <h2 className="font-bold md:text-4xl text-2xl">Our Teachers</h2>
+          <div className="md:mt-16 mt-8">
             <Image src={OurTeachers} alt="our-teachers" height={500} />
           </div>
-          <p className="text-2xl mt-10">
+          <p className="md:text-2xl text-xl md:mt-20 mt-12">
             실력있고 재미있는 선생님과 영어로 대화하며 게임합니다.
           </p>
         </div>
       </article>
       <article className="bg-neutral-900 mt-24">
         <div className="flex justify-between items-center max-w-7xl mx-auto">
-          <div className="px-4 py-12">
-            <h2 className="text-neutral-100 text-4xl font-bold">
+          <div className="px-4 md:py-24 py-12">
+            <h2 className="text-neutral-100 md:text-4xl text-2xl font-bold">
               이제는 억지로 공부하지 마세요.
             </h2>
             <div className="text-neutral-100 text-xl">
-              <p className="mt-12">매번 외우도록 공부시키셨나요?</p>
+              <p className="md:mt-12 mt-8">매번 외우도록 공부시키셨나요?</p>
               <p className="mt-4">아이가 막상 말하려고 하면 머뭇거리나요?</p>
               <p className="mt-4">이제는 아이들을 즐겁게 공부시키세요. </p>
             </div>
-            <div className="text-blue-500 mt-10">
+            <div className="text-blue-500 md:mt-12 mt-8">
               <p className="mt-2">게임하면서 대화를 나누다보면</p>
               <p className="mt-2">어느새 사라진 영어공포증</p>
               <p className="mt-2">웃으면서 자연스럽게 나오는 영어 회화</p>
             </div>
           </div>
-          <div>
-            <Image src={BookIllustration} alt="BookIllustration" height={300} />
+          <div className="md:block hidden">
+            <Image src={BookIllustration} alt="BookIllustration" height={350} />
           </div>
         </div>
       </article>
-      <article className="flex flex-col max-w-7xl mx-auto">
-        <div className="flex flex-col items-center text-center mt-24">
-          <h2 className="text-4xl font-bold">수업은 이렇게 진행됩니다.</h2>
+      <article className="flex flex-col max-w-7xl mx-auto px-2">
+        <div className="flex flex-col items-center text-center md:mt-24 mt-16">
+          <h2 className="md:text-4xl text-2xl font-bold">
+            수업은 이렇게 진행됩니다.
+          </h2>
         </div>
         <div className="flex flex-col items-center text-center mt-12">
-          <h3 className="text-2xl font-semibold">
+          <h3 className="md:text-2xl text-xl font-semibold">
             1. 아이가 좋아하는 게임과 수업을 진행할 시간을 선택하세요!
           </h3>
-          <div className="flex items-center text-left mt-8">
-            <div>
+          <div className="flex justify-between items-center text-left mt-8">
+            <div className="px-12 md:block hidden">
               <Image
                 src={TimeIllustration}
                 alt="TimeIllustration"
-                height={300}
+                height={350}
               />
             </div>
             <div>
-              <div className="text-xl">
+              <div className="md:text-xl text-base">
                 <p className="">아이와 함께 살펴보면서 이야기를 나누는 것도 </p>
-                <p className="mt-4">좋은 방법입니다.</p>
+                <p className="md:mt-4 mt-2">좋은 방법입니다.</p>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center text-center mt-24">
-          <h3 className="text-2xl font-semibold">
+        <div className="flex flex-col items-center text-center mt-12">
+          <h3 className="md:text-2xl text-xl font-semibold">
             2. 아이와 함께 수업을 진행해주실 선생님을 둘러보세요!
           </h3>
-          <div className="flex items-center text-left mt-8">
-            <div>
-              <div className="text-xl">
+          <div className="flex justify-between items-center text-left mt-8">
+            <div className="px-12">
+              <div className="md:text-xl text-base">
                 <p className="">선생님의 자기소개부터 살펴보아요.</p>
-                <p className="mt-4">
+                <p className="md:mt-4 mt-2">
                   수업 스타일, 발음, 후기 등을 중점으로 보시면 더욱 좋아요!
                 </p>
               </div>
             </div>
-            <div>
-              <Image src={AIllustration} alt="AIllustration" height={300} />
+            <div className="px-12 md:block hidden">
+              <Image src={AIllustration} alt="AIllustration" height={350} />
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center text-center mt-24">
-          <h3 className="text-2xl font-semibold">
+        <div className="flex flex-col items-center text-center mt-12">
+          <h3 className="md:text-2xl text-xl font-semibold">
             3. 약속된 시간에 영어로 대화하며 선생님과 함께 게임해요!
           </h3>
           <div className="flex items-center text-left mt-8">
-            <div>
+            <div className="px-12 md:block hidden">
               <Image
                 src={TalkIllustration}
                 alt="TalkIllustration"
-                height={300}
+                height={350}
               />
             </div>
             <div>
-              <div className="text-xl">
+              <div className="md:text-xl text-base">
                 <p className="">신나게 게임하면서 대화를 나누어요!</p>
-                <p className="mt-4">
+                <p className="md:mt-4 mt-2">
                   겁내지 않고, 영어로 대화하면 선생님이 도와줄거에요.
                 </p>
               </div>
@@ -142,50 +154,50 @@ const ClientPage = () => {
           </div>
         </div>
         <div className="flex flex-col items-center text-center mt-24">
-          <h3 className="text-2xl font-semibold">
+          <h3 className="md:text-2xl text-xl font-semibold">
             4. 수업을 마치고 분석 레포트로 복습해요!
           </h3>
           <div className="flex items-center text-left mt-8">
-            <div>
-              <div className="text-xl">
+            <div className="px-12">
+              <div className="md:text-xl text-base">
                 <p className="">게임을 하면서 어떤 표현을 배웠나요?</p>
-                <p className="mt-4">
+                <p className="md:mt-4 mt-2">
                   반복적으로 실수하는 발음과 표현은 무엇이었나요?
                 </p>
-                <p className="mt-12">
+                <p className="md:mt-8 mt-4">
                   분석 레포트로 매일 설장하는 아이의 영어 실력을 확인하세요!
                 </p>
               </div>
             </div>
-            <div>
+            <div className="px-12 md:block hidden">
               <Image
                 src={ChatIllustration}
                 alt="ChatIllustration"
-                height={300}
+                height={350}
               />
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center text-center mt-24">
-          <h2 className="text-4xl font-bold">
+        <div className="flex flex-col items-center text-center mt-24 px-2">
+          <h2 className="md:text-4xl text-2xl font-bold">
             어떤 게임으로 수업을 진행하나요?
           </h2>
-          <p className="text-2xl mt-4">
+          <p className="md:text-xl text-base mt-8">
             COWCOW에는 그 어떤 게임도 진행해주실 다양한 선생님들이 계십니다.
           </p>
-          <div className="mt-16">
+          <div className="mt-12">
             <Image src={Game} alt="game" height={500} />
           </div>
         </div>
-        <div className="flex flex-col items-center text-center mt-24">
-          <h2 className="text-4xl font-bold">
+        <div className="flex flex-col items-center text-center mt-40">
+          <h2 className="md:text-4xl text-2xl font-bold">
             &quot;아이가 정말 즐겁게 영어를 배우는게 느껴져요.&quot;
           </h2>
-          <p className="text-2xl mt-4">
+          <p className="md:text-xl text-base mt-8">
             영어로 말하면서 더 이상 겁먹거나 긴장하지 않는 아이의 모습이
             신기해요!
           </p>
-          <div className="flex mt-16">
+          <div className="flex md:flex-row flex-col mt-16 gap-8 mx-4">
             <div className="max-w-sm rounded overflow-hidden shadow-lg">
               <div className="px-6 py-4">
                 <h3 className="flex flex-col font-bold text-xl mb-2">
@@ -193,7 +205,7 @@ const ClientPage = () => {
                   (브롤스타즈 영어수업 수강)
                 </h3>
                 <div className="text-neutral-700 mt-2">
-                  <p className="mt-4">
+                  <p className="mt-8">
                     아이가 학습지나 영어 학원은 그렇게 싫어했는데, 이제는 영어
                     선생님이랑 게임하는 날만 기다리네요.
                   </p>
@@ -217,7 +229,7 @@ const ClientPage = () => {
                   (마인 크래프트 영어수업 수강)
                 </h3>
                 <div className="flex flex-col text-neutral-700 mt-2 item-center">
-                  <p className="mt-4">
+                  <p className="mt-8">
                     아이가 게임(마인 크래프트)을 엄청 좋아해서 걱정했는데,
                     선생님과 영어로 대화하면서 블락코딩까지 알려주시더라구요. ^^
                   </p>
@@ -236,7 +248,7 @@ const ClientPage = () => {
                   (배틀 그라운드 영어수업 수강)
                 </h3>
                 <div className="flex flex-col text-neutral-700 mt-2 item-center">
-                  <p className="mt-4">
+                  <p className="mt-8">
                     아들이 영어공부를 포기할까봐 마지막으로 시도한 게임 영어
                     수업이었는데, 너무 좋아하네요 ㅎㅎ
                   </p>
@@ -251,12 +263,12 @@ const ClientPage = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-between items-center max-w-7xl mx-auto">
+        <div className="flex justify-between items-center max-w-7xl mx-auto mt-24 text-center">
           <div className="px-4 py-12">
-            <h2 className="font-bold text-4xl">
+            <h2 className="md:text-4xl text-2xl font-bold">
               오늘도 수많은 아이들이 즐겁게 영어공부를 하고 있습니다.
             </h2>
-            <div className="grid grid-cols-3 gap-4 mt-8">
+            <div className="grid md:grid-cols-3 grid-cols-1 md:gap-12 gap-8 mt-16">
               <div className="flex flex-col items-center text-neutral-100 bg-blue-500 rounded px-8 py-8">
                 <h3 className="text-2xl font-bold">4.89점</h3>
                 <p className="mt-2">수업 만족도(아이 대상, 5점 만점 기준)</p>
@@ -273,15 +285,16 @@ const ClientPage = () => {
           </div>
         </div>
       </article>
-      <div className="bg-neutral-50 mt-24">
+      <div className="bg-neutral-50 mt-40">
         <div className="flex justify-between items-center max-w-7xl mx-auto">
-          <div className="px-4 py-12">
-            <h2 className="font-bold text-4xl">
-              COWCOW 영어/일본어 선생님으로 지원하고 싶어요!
+          <div className="px-4 py-24">
+            <h2 className="font-bold md:text-4xl text-2xl">
+              <p>COWCOW 영어/일본어 선생님으로</p>
+              <p className="mt-4">지원하고 싶어요!</p>
             </h2>
-            <div className="text-teal-500 mt-8 mb-8 text-xl">
+            <div className="text-teal-500 my-8 font-semibold md:text-xl text-base">
               <p className="mt-4">영어/일본어로 아이를 가르칠 수 있나요? </p>
-              <p className="mt-2">게임을 좋아한다면 지금 지원해보세요!</p>
+              <p className="mt-4">게임을 좋아한다면 지금 지원해보세요!</p>
             </div>
             <Link
               href="https://tally.so/r/3NlEPp"
@@ -290,8 +303,8 @@ const ClientPage = () => {
               선생님으로 지원하기
             </Link>
           </div>
-          <div>
-            <Image src={ApplyIllustration} alt="지원하기" height={300} />
+          <div className="px-12 md:block hidden">
+            <Image src={ApplyIllustration} alt="지원하기" height={350} />
           </div>
         </div>
       </div>
