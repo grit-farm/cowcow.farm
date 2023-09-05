@@ -5,11 +5,16 @@ import "swiper/css";
 import Image from "next/image";
 import Link from "next/link";
 
-import GameIllustration from "../../public/images/game-illustration.svg";
-import SearchIllustration from "../../public/images/search-illustration.svg";
-import StudyIllustration from "../../public/images/study-illustration.svg";
-import FormIllustration from "../../public/images/form-illustration.svg";
-import SoftBankVentures from "../../public/images/soft-bank-ventures.jpg";
+import GameIllustration from "../../public/images/landing/game-illustration.svg";
+import FormIllustration from "../../public/images/landing/form-illustration.svg";
+import OurTeachers from "../../public/images/landing/our-teachers.png";
+import BookIllustration from "../../public/images/landing/book-illustration.svg";
+import TimeIllustration from "../../public/images/landing/time-illustration.svg";
+import AIllustration from "../../public/images/landing/a-illustration.svg";
+import TalkIllustration from "../../public/images/landing/talk-illustration.svg";
+import ChatIllustration from "../../public/images/landing/chat-illustration.svg";
+import Game from "../../public/images/landing/game.png";
+import ApplyIllustration from "../../public/images/landing/apply-illustration.svg";
 
 const ClientPage = () => {
   return (
@@ -18,11 +23,13 @@ const ClientPage = () => {
         <div className="flex justify-between items-center max-w-7xl mx-auto">
           <div className="px-4 py-12">
             <h2 className="font-bold text-4xl">
-              게임만 하는 우리아이 게임으로 영어공부하자
+              억지 영어 공부는 그만!
+              <br />
+              신나게 게임하면서 배우는 진짜 영어
             </h2>
             <p className="text-neutral-700 mt-2">
-              게임을 통해서 김군은 영어에 흥미를 붙여서 MIT 공대에 들어가서
-              마이크로소프트에서 일하고 있습니다.
+              명문대학, 대기업 출신 선생님과 함께 게임을 즐기다보면 <br />
+              부담과 두려움을 사라지고, 자연스럽게 영어를 배울 수 있습니다.
             </p>
             <button className="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-8 rounded">
               무료체험
@@ -31,90 +38,260 @@ const ClientPage = () => {
           <div>
             <Image
               src={GameIllustration}
-              alt="게임만 하는 우리아이"
+              alt="억지 영어 공부는 그만!"
               height={300}
             />
           </div>
         </div>
       </div>
-      <article className="flex flex-col max-w-7xl mx-auto mt-24">
-        <div className="flex flex-col items-center text-center">
-          <h2 className="text-4xl font-bold">Why COWCOW?</h2>
-          <Image src={SearchIllustration} alt="공부하는 김군" height={300} />
-          <p className="text-neutral-700 mt-2">
-            어떻게? 김군은 글로벌 기업인 마이크로소프트에서 일 할 수 있었을까요?{" "}
-            <br />
-            그것은 바로 카우카우 게임메이트와 함께 하는 게임을 통해 영어와
-            게임에 흥미를 가지게 되었고, 자연스럽게 영어와 코딩을 알게되었기
-            때문입니다.
+      <article className="flex flex-col max-w-7xl mx-auto">
+        <div className="flex flex-col items-center text-center mt-24">
+          <h2 className="text-4xl font-bold">Our Teachers</h2>
+          <div className="mt-16">
+            <Image src={OurTeachers} alt="our-teachers" height={500} />
+          </div>
+          <p className="text-2xl mt-10">
+            실력있고 재미있는 선생님과 영어로 대화하며 게임합니다.
           </p>
         </div>
+      </article>
+      <article className="bg-neutral-900 mt-24">
+        <div className="flex justify-between items-center max-w-7xl mx-auto">
+          <div className="px-4 py-12">
+            <h2 className="text-neutral-100 text-4xl font-bold">
+              이제는 억지로 공부하지 마세요.
+            </h2>
+            <div className="text-neutral-100 text-xl">
+              <p className="mt-12">매번 외우도록 공부시키셨나요?</p>
+              <p className="mt-4">아이가 막상 말하려고 하면 머뭇거리나요?</p>
+              <p className="mt-4">이제는 아이들을 즐겁게 공부시키세요. </p>
+            </div>
+            <div className="text-blue-500 mt-10">
+              <p className="mt-2">게임하면서 대화를 나누다보면</p>
+              <p className="mt-2">어느새 사라진 영어공포증</p>
+              <p className="mt-2">웃으면서 자연스럽게 나오는 영어 회화</p>
+            </div>
+          </div>
+          <div>
+            <Image src={BookIllustration} alt="BookIllustration" height={300} />
+          </div>
+        </div>
+      </article>
+      <article className="flex flex-col max-w-7xl mx-auto">
         <div className="flex flex-col items-center text-center mt-24">
-          <h2 className="text-4xl font-bold">수업 방법</h2>
-          <Image src={StudyIllustration} alt="수업방법" height={300} />
-          <p className="text-neutral-700 mt-2">
-            1. 아이가 하고 싶은 게임을 선택합니다. <br />
-            2. 원하는 게임을 하면서 영어로 대화합니다.
-            <br />
-            3. 게임이 끝나면 수업 AI 리포트를 통해 복습합니다.
-          </p>
+          <h2 className="text-4xl font-bold">수업은 이렇게 진행됩니다.</h2>
+        </div>
+        <div className="flex flex-col items-center text-center mt-12">
+          <h3 className="text-2xl font-semibold">
+            1. 아이가 좋아하는 게임과 수업을 진행할 시간을 선택하세요!
+          </h3>
+          <div className="flex items-center text-left mt-8">
+            <div>
+              <Image
+                src={TimeIllustration}
+                alt="TimeIllustration"
+                height={300}
+              />
+            </div>
+            <div>
+              <div className="text-xl">
+                <p className="">아이와 함께 살펴보면서 이야기를 나누는 것도 </p>
+                <p className="mt-4">좋은 방법입니다.</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="flex flex-col items-center text-center mt-24">
-          <h2 className="text-4xl font-bold">
-            &quot;아들 김군이 이제 영어로 게임을 해요!&quot;
-          </h2>
-          <p className="text-neutral-700 mt-2">
-            게임만 하는 아들이 걱정이였는데, 이제 영어로 게임을 하니깐
-            영어공부를 하는 것 같아서 안심이에요~
-          </p>
-          <div className="mt-4 flex flex-row gap-8">
-            <div className="max-w-sm rounded overflow-hidden shadow-lg">
-              <div className="px-6 py-4">
-                <h3 className="font-bold text-xl mb-2">
-                  우리 딸은 말이에요...
-                </h3>
-                <p className="text-neutral-700 mt-2">
-                  리그오브레전드 대회에 나가서 우승해서 이제는 10억 연봉을
-                  받는다니깐요
+          <h3 className="text-2xl font-semibold">
+            2. 아이와 함께 수업을 진행해주실 선생님을 둘러보세요!
+          </h3>
+          <div className="flex items-center text-left mt-8">
+            <div>
+              <div className="text-xl">
+                <p className="">선생님의 자기소개부터 살펴보아요.</p>
+                <p className="mt-4">
+                  수업 스타일, 발음, 후기 등을 중점으로 보시면 더욱 좋아요!
                 </p>
               </div>
             </div>
-            <div className="max-w-sm rounded overflow-hidden shadow-lg">
-              <div className="px-6 py-4">
-                <h3 className="font-bold text-xl mb-2">
-                  우리 강아지가 영어로 말해요!
-                </h3>
-                <p className="text-neutral-700 mt-2">
-                  우리집 뽀삐에게 영어게임 교육을 했더니 영어로 밥달라고 하고
-                  자기 밥도 주문한다니깐요?
+            <div>
+              <Image src={AIllustration} alt="AIllustration" height={300} />
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col items-center text-center mt-24">
+          <h3 className="text-2xl font-semibold">
+            3. 약속된 시간에 영어로 대화하며 선생님과 함께 게임해요!
+          </h3>
+          <div className="flex items-center text-left mt-8">
+            <div>
+              <Image
+                src={TalkIllustration}
+                alt="TalkIllustration"
+                height={300}
+              />
+            </div>
+            <div>
+              <div className="text-xl">
+                <p className="">신나게 게임하면서 대화를 나누어요!</p>
+                <p className="mt-4">
+                  겁내지 않고, 영어로 대화하면 선생님이 도와줄거에요.
                 </p>
               </div>
             </div>
           </div>
         </div>
         <div className="flex flex-col items-center text-center mt-24">
-          <h2 className="text-4xl font-bold">스폰서</h2>
-          <div className="mt-12">
-            <Image src={SoftBankVentures} alt="소프트뱅크" width={200} />
+          <h3 className="text-2xl font-semibold">
+            4. 수업을 마치고 분석 레포트로 복습해요!
+          </h3>
+          <div className="flex items-center text-left mt-8">
+            <div>
+              <div className="text-xl">
+                <p className="">게임을 하면서 어떤 표현을 배웠나요?</p>
+                <p className="mt-4">
+                  반복적으로 실수하는 발음과 표현은 무엇이었나요?
+                </p>
+                <p className="mt-12">
+                  분석 레포트로 매일 설장하는 아이의 영어 실력을 확인하세요!
+                </p>
+              </div>
+            </div>
+            <div>
+              <Image
+                src={ChatIllustration}
+                alt="ChatIllustration"
+                height={300}
+              />
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-col items-center text-center mt-24">
+          <h2 className="text-4xl font-bold">
+            어떤 게임으로 수업을 진행하나요?
+          </h2>
+          <p className="text-2xl mt-4">
+            COWCOW에는 그 어떤 게임도 진행해주실 다양한 선생님들이 계십니다.
+          </p>
+          <div className="mt-16">
+            <Image src={Game} alt="game" height={500} />
+          </div>
+        </div>
+        <div className="flex flex-col items-center text-center mt-24">
+          <h2 className="text-4xl font-bold">
+            &quot;아이가 정말 즐겁게 영어를 배우는게 느껴져요.&quot;
+          </h2>
+          <p className="text-2xl mt-4">
+            영어로 말하면서 더 이상 겁먹거나 긴장하지 않는 아이의 모습이
+            신기해요!
+          </p>
+          <div className="flex mt-16">
+            <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <div className="px-6 py-4">
+                <h3 className="flex flex-col font-bold text-xl mb-2">
+                  초등학교 3학년 아이 어머니 후기 <br />
+                  (브롤스타즈 영어수업 수강)
+                </h3>
+                <div className="text-neutral-700 mt-2">
+                  <p className="mt-4">
+                    아이가 학습지나 영어 학원은 그렇게 싫어했는데, 이제는 영어
+                    선생님이랑 게임하는 날만 기다리네요.
+                  </p>
+
+                  <p className="mt-8">
+                    처음에 반신반의해서 게임하는 모습을 지켜보았는데, 아이가
+                    생각보다 말도 많이하고, 선생님에게 질문도 하는 모습보고
+                    놀랐어요...
+                  </p>
+
+                  <p className="mt-8">
+                    무엇보다 영어로 말하는 것을 겁내지 않는 것 같아요.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <div className="px-6 py-4">
+                <h3 className="font-bold text-xl mb-2">
+                  초등학교 6학년 아이 어머니 후기 <br />
+                  (마인 크래프트 영어수업 수강)
+                </h3>
+                <div className="flex flex-col text-neutral-700 mt-2 item-center">
+                  <p className="mt-4">
+                    아이가 게임(마인 크래프트)을 엄청 좋아해서 걱정했는데,
+                    선생님과 영어로 대화하면서 블락코딩까지 알려주시더라구요. ^^
+                  </p>
+
+                  <p className="mt-8">
+                    그래도 영어에 흥미를 붙일 수 있다는게 얼마나 다행인지..
+                    앞으로도 잘 부탁드려요 해* 선생님~
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="max-w-sm rounded overflow-hidden shadow-lg">
+              <div className="px-6 py-4">
+                <h3 className="font-bold text-xl mb-2">
+                  중학교 1학년 아이 어머니 후기 <br />
+                  (배틀 그라운드 영어수업 수강)
+                </h3>
+                <div className="flex flex-col text-neutral-700 mt-2 item-center">
+                  <p className="mt-4">
+                    아들이 영어공부를 포기할까봐 마지막으로 시도한 게임 영어
+                    수업이었는데, 너무 좋아하네요 ㅎㅎ
+                  </p>
+
+                  <p className="mt-8">
+                    아들 말로는 미군이랑 함께있는 거 같다는데 솔직히 그정도는
+                    아니겠지요..ㅋ 이렇게라도 흥미붙이고 회화만 잘해도 먹고
+                    사는덴 문제 없겠죠?^^
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-between items-center max-w-7xl mx-auto">
+          <div className="px-4 py-12">
+            <h2 className="font-bold text-4xl">
+              오늘도 수많은 아이들이 즐겁게 영어공부를 하고 있습니다.
+            </h2>
+            <div className="grid grid-cols-3 gap-4 mt-8">
+              <div className="flex flex-col items-center text-neutral-100 bg-blue-500 rounded px-8 py-8">
+                <h3 className="text-2xl font-bold">4.89점</h3>
+                <p className="mt-2">수업 만족도(아이 대상, 5점 만점 기준)</p>
+              </div>
+              <div className="flex flex-col items-center text-neutral-100 bg-blue-500 rounded px-8 py-8">
+                <h3 className="text-2xl font-bold">100% 환불 보장</h3>
+                <p className="mt-2">1회 강의 후, 불만족시</p>
+              </div>
+              <div className="flex flex-col items-center text-neutral-100 bg-blue-500 rounded px-8 py-8">
+                <h3 className="text-2xl font-bold">89%</h3>
+                <p className="mt-2">강의 재수강 신청률(2주이내)</p>
+              </div>
+            </div>
           </div>
         </div>
       </article>
       <div className="bg-neutral-50 mt-24">
         <div className="flex justify-between items-center max-w-7xl mx-auto">
           <div className="px-4 py-12">
-            <h2 className="font-bold text-4xl">선생님이 하고 싶다면?</h2>
-            <p className="text-neutral-700 mt-2 mb-4">
-              영어/일본어를 할 수 있고 게임을 좋아하면 지금 지원해보세요.
-            </p>
+            <h2 className="font-bold text-4xl">
+              COWCOW 영어/일본어 선생님으로 지원하고 싶어요!
+            </h2>
+            <div className="text-teal-500 mt-8 mb-8 text-xl">
+              <p className="mt-4">영어/일본어로 아이를 가르칠 수 있나요? </p>
+              <p className="mt-2">게임을 좋아한다면 지금 지원해보세요!</p>
+            </div>
             <Link
               href="https://tally.so/r/3NlEPp"
-              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-8 rounded"
+              className="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-8 rounded"
             >
-              지원하기
+              선생님으로 지원하기
             </Link>
           </div>
           <div>
-            <Image src={FormIllustration} alt="지원하기" height={300} />
+            <Image src={ApplyIllustration} alt="지원하기" height={300} />
           </div>
         </div>
       </div>
