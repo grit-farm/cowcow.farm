@@ -43,6 +43,7 @@ const ClientPage = () => {
             <div className="mt-8">
               <Link
                 href="https://tally.so/r/nWEdEP"
+                target="_blank"
                 className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-12 rounded"
               >
                 무료체험
@@ -297,6 +298,7 @@ const ClientPage = () => {
           <div className="flex items-center">
             <Link
               href="https://tally.so/r/nWEdEP"
+              target="_blank"
               className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 px-12 rounded"
             >
               무료체험
@@ -317,6 +319,7 @@ const ClientPage = () => {
             </div>
             <Link
               href="https://tally.so/r/3NlEPp"
+              target="_blank"
               className="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-8 rounded"
             >
               선생님으로 지원하기

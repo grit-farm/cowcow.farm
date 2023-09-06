@@ -53,6 +53,7 @@ const Headers = () => {
                 <li>
                   <Link
                     href="https://tally.so/r/nWEdEP"
+                    target="_blank"
                     className="block font-bold py-2 text-blue-500 hover:text-blue-600 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 "
                   >
                     무료체험
