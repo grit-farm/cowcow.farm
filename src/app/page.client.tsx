@@ -290,12 +290,12 @@ const ClientPage = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-row justify-between items-left text-left mt-40 px-2">
+        <div className="flex md:flex-row flex-col justify-between md:items-left items-center md:text-left text-center md:mt-40 mt-16 px-2">
           <h2 className="md:text-5xl text-2xl font-bold">
             <p>더 이상 고민하지 마세요.</p>
             <p className="mt-4">지금 무료 수업듣고 효과를 확인하세요!</p>
           </h2>
-          <div className="flex items-center">
+          <div className="flex flex-row items-center md:mt-0 mt-12">
             <Link
               href="https://tally.so/r/nWEdEP"
               target="_blank"
@@ -306,7 +306,7 @@ const ClientPage = () => {
           </div>
         </div>
       </article>
-      <div className="bg-neutral-50 mt-40">
+      <div className="bg-neutral-50 md:mt-40 mt-16">
         <div className="flex justify-between items-center max-w-7xl mx-auto">
           <div className="px-4 py-24">
             <h2 className="font-bold md:text-4xl text-2xl">
