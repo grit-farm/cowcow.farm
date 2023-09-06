@@ -52,8 +52,8 @@ const Headers = () => {
               <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                 <li>
                   <Link
-                    href="#"
-                    className="block py-2 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 "
+                    href="https://tally.so/r/nWEdEP"
+                    className="block font-bold py-2 text-blue-500 hover:text-blue-600 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 "
                   >
                     무료체험
                   </Link>

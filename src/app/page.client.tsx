@@ -40,9 +40,14 @@ const ClientPage = () => {
                 부담과 두려움을 사라지고, 자연스럽게 영어를 배울 수 있습니다.
               </p>
             </div>
-            <button className="mt-8 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-8 rounded">
-              무료체험
-            </button>
+            <div className="mt-8">
+              <Link
+                href="https://tally.so/r/nWEdEP"
+                className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-12 rounded"
+              >
+                무료체험
+              </Link>
+            </div>
           </div>
           <div>
             <Image
@@ -270,8 +275,8 @@ const ClientPage = () => {
             </h2>
             <div className="grid md:grid-cols-3 grid-cols-1 md:gap-12 gap-8 mt-16">
               <div className="flex flex-col items-center text-neutral-100 bg-blue-500 rounded px-8 py-8">
-                <h3 className="text-2xl font-bold">4.89점</h3>
-                <p className="mt-2">수업 만족도(아이 대상, 5점 만점 기준)</p>
+                <h3 className="text-2xl font-bold">4.9점</h3>
+                <p className="mt-2">수업 만족도(5점 만점 기준)</p>
               </div>
               <div className="flex flex-col items-center text-neutral-100 bg-blue-500 rounded px-8 py-8">
                 <h3 className="text-2xl font-bold">100% 환불 보장</h3>
@@ -279,9 +284,23 @@ const ClientPage = () => {
               </div>
               <div className="flex flex-col items-center text-neutral-100 bg-blue-500 rounded px-8 py-8">
                 <h3 className="text-2xl font-bold">89%</h3>
-                <p className="mt-2">강의 재수강 신청률(2주이내)</p>
+                <p className="mt-2">강의 재구매율(2주이내)</p>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="flex flex-row justify-between items-left text-left mt-40 px-2">
+          <h2 className="md:text-5xl text-2xl font-bold">
+            <p>더 이상 고민하지 마세요.</p>
+            <p className="mt-4">지금 무료 수업듣고 효과를 확인하세요!</p>
+          </h2>
+          <div className="flex items-center">
+            <Link
+              href="https://tally.so/r/nWEdEP"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 px-12 rounded"
+            >
+              무료체험
+            </Link>
           </div>
         </div>
       </article>
