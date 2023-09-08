@@ -1,6 +1,7 @@
 "use client";
 
 import Script from "next/script";
+import { Analytics as VercelAnalytics } from "@vercel/analytics/react";
 
 const Analytics = () => {
   return (
@@ -17,6 +18,7 @@ const Analytics = () => {
           gtag('config', ${process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID});
         `}
       </Script>
+      <VercelAnalytics />
     </>
   );
 };
