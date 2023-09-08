@@ -2,10 +2,9 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { IBM_Plex_Sans_KR } from "next/font/google";
 
+import Analytics from "@/components/Analytics";
 import Headers from "@/components/Headers";
 import Footer from "@/components/Footer";
-
-import Og from "../../public/images/og.png";
 
 const IBMPlexSansKr = IBM_Plex_Sans_KR({
   weight: ["100", "200", "300", "400", "500", "600", "700"],
@@ -33,6 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
+      <Analytics />
       <body className={`${IBMPlexSansKr.className}`}>
         <Headers />
         {children}

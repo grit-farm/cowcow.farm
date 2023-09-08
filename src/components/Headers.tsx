@@ -1,16 +1,10 @@
 "use client";
 
-import Script from "next/script";
-import { Suspense } from "react";
-import Analytics from "./Analytics";
 import Link from "next/link";
 
 const Headers = () => {
   return (
     <>
-      <Suspense>
-        <Analytics />
-      </Suspense>
       <header>
         <nav className=" bg-white shadow border-gray-200 px-4 lg:px-6 py-2.5">
           <div className="flex flex-wrap max-w-7xl justify-between items-center mx-auto ">
