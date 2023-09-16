@@ -309,7 +309,7 @@ const ClientPage = () => {
             <p className="mt-4">지금 한정 특가로 체험하고</p>
             <p className="mt-4">효과를 확인해보세요!</p>
           </h2>
-          <div className="flex flex-row items-center md:mt-0 mt-12">
+          <div className="flex flex-col items-center md:mt-0 mt-12">
             <Link
               href="https://tally.so/r/nWEdEP"
               target="_blank"
