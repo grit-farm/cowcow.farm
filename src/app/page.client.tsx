@@ -31,8 +31,10 @@ const ClientPage = () => {
         <div className="flex md:flex-row flex-col justify-between items-center max-w-7xl mx-auto">
           <div className="px-4 py-12">
             <h2 className="font-bold md:text-4xl text-2xl">
-              <p>억지 영어 공부는 그만!</p>
-              <p className="mt-4">신나게 게임하면서 배우는 진짜 영어</p>
+              <p>영어를 가장 즐겁게 배우는 방법</p>
+              <p className="mt-4">
+                신나게 게임하면서 끊임없이 영어로 이야기해요!
+              </p>
             </h2>
             <div className="text-neutral-700 mt-8 md:text-xl text-base">
               <p>명문대학, 대기업 출신 선생님과 함께 게임을 즐기다보면</p>
@@ -46,8 +48,11 @@ const ClientPage = () => {
                 target="_blank"
                 className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-12 rounded"
               >
-                무료체험
+                선착순 한정 9,900원
               </Link>
+              <p className="text-sm mt-4 text-red-500">
+                (해당 프로모션은 정해진 수량에 따라 선착순 마감될 수 있습니다.)
+              </p>
             </div>
           </div>
           <div>
@@ -63,11 +68,19 @@ const ClientPage = () => {
       <article className="flex flex-col max-w-7xl mx-auto  px-4">
         <div className="flex flex-col items-center text-center mt-24">
           <h2 className="font-bold md:text-4xl text-2xl">Our Teachers</h2>
+          <p>COWCOW를 통해 우리 아이가 만날 선생님은 다음과 같습니다.</p>
           <div className="md:mt-16 mt-8">
             <Image src={OurTeachers} alt="our-teachers" height={500} />
           </div>
           <p className="md:text-2xl text-xl md:mt-20 mt-12">
-            실력있고 재미있는 선생님과 영어로 대화하며 게임합니다.
+            1. COWCOW 선생님들은 최고 수준의 검증된 선생님들만 계십니다. COWCOW
+          </p>
+          <p className="md:text-2xl text-xl md:mt-8 mt-4">
+            2. 선생님들은 아이들이 게임을 통한 영어 교육에 진심입니다. COWCOW
+          </p>
+          <p className="md:text-2xl text-xl md:mt-8 mt-4">
+            3. 선생님들은 평소에도 게임하면서 외국인들과 소통하는
+            선생님들입니다.
           </p>
         </div>
       </article>
@@ -293,7 +306,8 @@ const ClientPage = () => {
         <div className="flex md:flex-row flex-col justify-between md:items-left items-center md:text-left text-center md:mt-40 mt-16 px-2">
           <h2 className="md:text-5xl text-2xl font-bold">
             <p>더 이상 고민하지 마세요.</p>
-            <p className="mt-4">지금 무료 수업듣고 효과를 확인하세요!</p>
+            <p className="mt-4">지금 한정 특가로 체험하고</p>
+            <p className="mt-4">효과를 확인해보세요!</p>
           </h2>
           <div className="flex flex-row items-center md:mt-0 mt-12">
             <Link
@@ -301,8 +315,11 @@ const ClientPage = () => {
               target="_blank"
               className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 px-12 rounded"
             >
-              무료체험
+              선착순 한정 9,900원
             </Link>
+            <p className="text-sm mt-4 text-red-500">
+              (해당 프로모션은 정해진 수량에 따라 선착순 마감될 수 있습니다.)
+            </p>
           </div>
         </div>
       </article>

@@ -2,7 +2,6 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { IBM_Plex_Sans_KR } from "next/font/google";
 
-import Analytics from "@/components/Analytics";
 import Headers from "@/components/Headers";
 import Footer from "@/components/Footer";
 
@@ -32,7 +31,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <Analytics />
       <body className={`${IBMPlexSansKr.className}`}>
         <Headers />
         {children}
