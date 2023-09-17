@@ -1,14 +1,16 @@
 "use client";
 
+import { Suspense } from "react";
 import Link from "next/link";
 import Analytics from "./Analytics";
-import { Suspense } from "react";
+import MetaInfo from "./MetaInfo";
 
 const Headers = () => {
   return (
     <>
       <Suspense>
         <Analytics />
+        <MetaInfo />
       </Suspense>
       <header>
         <nav className=" bg-white shadow border-gray-200 px-4 lg:px-6 py-2.5">
