@@ -46,7 +46,7 @@ const ClientPage = () => {
               <Link
                 href="https://tally.so/r/nWEdEP"
                 target="_blank"
-                className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-12 rounded"
+                className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-12 rounded"
               >
                 선착순 한정 9,900원
               </Link>
