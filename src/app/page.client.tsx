@@ -73,14 +73,13 @@ const ClientPage = () => {
             <Image src={OurTeachers} alt="our-teachers" height={500} />
           </div>
           <p className="md:text-2xl text-xl md:mt-20 mt-12">
-            1. COWCOW 선생님들은 최고 수준의 검증된 선생님들만 계십니다. COWCOW
+            1. 최고 수준의 검증된 선생님들만 계십니다.
           </p>
           <p className="md:text-2xl text-xl md:mt-8 mt-4">
-            2. 선생님들은 아이들이 게임을 통한 영어 교육에 진심입니다. COWCOW
+            2. 아이들의 게임을 통한 영어 교육에 진심입니다.
           </p>
           <p className="md:text-2xl text-xl md:mt-8 mt-4">
-            3. 선생님들은 평소에도 게임하면서 외국인들과 소통하는
-            선생님들입니다.
+            3. 평소에도 게임하면서 외국인들과 소통하는 선생님들입니다.
           </p>
         </div>
       </article>
@@ -288,15 +287,15 @@ const ClientPage = () => {
               오늘도 수많은 아이들이 즐겁게 영어공부를 하고 있습니다.
             </h2>
             <div className="grid md:grid-cols-3 grid-cols-1 md:gap-12 gap-8 mt-16">
-              <div className="flex flex-col items-center text-neutral-100 bg-blue-500 rounded px-8 py-8">
+              <div className="flex flex-col items-center text-neutral-100 bg-black rounded px-8 py-8">
                 <h3 className="text-2xl font-bold">4.9점</h3>
                 <p className="mt-2">수업 만족도(5점 만점 기준)</p>
               </div>
-              <div className="flex flex-col items-center text-neutral-100 bg-blue-500 rounded px-8 py-8">
+              <div className="flex flex-col items-center text-neutral-100 bg-black rounded px-8 py-8">
                 <h3 className="text-2xl font-bold">100% 환불 보장</h3>
                 <p className="mt-2">1회 강의 후, 불만족시</p>
               </div>
-              <div className="flex flex-col items-center text-neutral-100 bg-blue-500 rounded px-8 py-8">
+              <div className="flex flex-col items-center text-neutral-100 bg-black rounded px-8 py-8">
                 <h3 className="text-2xl font-bold">89%</h3>
                 <p className="mt-2">강의 재구매율(2주이내)</p>
               </div>
