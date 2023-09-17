@@ -68,7 +68,9 @@ const ClientPage = () => {
       <article className="flex flex-col max-w-7xl mx-auto  px-4">
         <div className="flex flex-col items-center text-center mt-24">
           <h2 className="font-bold md:text-4xl text-2xl">Our Teachers</h2>
-          <p>COWCOW를 통해 우리 아이가 만날 선생님은 다음과 같습니다.</p>
+          <p className="mt-4">
+            COWCOW를 통해 우리 아이가 만날 선생님은 다음과 같습니다.
+          </p>
           <div className="md:mt-16 mt-8">
             <Image src={OurTeachers} alt="our-teachers" height={500} />
           </div>
