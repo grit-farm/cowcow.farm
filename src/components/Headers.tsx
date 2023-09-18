@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import Link from "next/link";
 import Analytics from "./Analytics";
 import MetaInfo from "./MetaInfo";
+import ChannelTalk from "./ChannelTalk";
 
 const Headers = () => {
   return (
@@ -11,6 +12,7 @@ const Headers = () => {
       <Suspense>
         <Analytics />
         <MetaInfo />
+        <ChannelTalk />
       </Suspense>
       <header>
         <nav className=" bg-white shadow border-gray-200 px-4 lg:px-6 py-2.5">
