@@ -11,13 +11,13 @@ const IBMPlexSansKr = IBM_Plex_Sans_KR({
 });
 
 export const metadata: Metadata = {
-  title: "COWCOW",
-  description: "억지 영어 공부는 그만 신나게 게임하면서 배우는 진짜 영어",
+  title: "카우카우 - 게임하며 배우는 즐거운 영어 회화",
+  description: "게임하며 배우는 즐거운 영어 회화",
   openGraph: {
-    title: "COWCOW",
-    description: "억지 영어 공부는 그만 신나게 게임하면서 배우는 진짜 영어",
+    title: "카우카우 - 게임하며 배우는 즐거운 영어 회화",
+    description: "게임하며 배우는 즐거운 영어 회화",
     url: "https://cowcow.farm/",
-    siteName: "COWCOW",
+    siteName: "카우카우 - 게임하며 배우는 즐거운 영어 회화",
     images: ["https://cowcow.farm//images/og.png"],
     locale: "ko-KR",
     type: "website",
