@@ -1,12 +1,14 @@
 "use client";
 
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import Link from "next/link";
 import Analytics from "./Analytics";
 import MetaInfo from "./MetaInfo";
 import ChannelTalk from "./ChannelTalk";
 
 const Headers = () => {
+  const [toggle, setToggle] = useState(false);
+
   return (
     <>
       <Suspense>
@@ -25,11 +27,14 @@ const Headers = () => {
             </Link>
             <div className="flex md:hidden items-center lg:order-2">
               <button
-                data-collapse-toggle="mobile-menu-2"
+                data-collapse-toggle="mobile-menu"
                 type="button"
                 className="inline-flex items-center p-2 ml-1 text-sm rounded-lg lg:hidden"
-                aria-controls="mobile-menu-2"
+                aria-controls="mobile-menu"
                 aria-expanded="false"
+                onClick={() => {
+                  setToggle(!toggle);
+                }}
               >
                 <span className="sr-only">Open menu</span>
                 <svg
@@ -49,14 +54,16 @@ const Headers = () => {
               </button>
             </div>
             <div
-              className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
-              id="mobile-menu-2"
+              className={`${
+                !toggle && "hidden"
+              } justify-between items-center w-full lg:flex lg:w-auto lg:order-1`}
+              id="mobile-menu"
             >
               <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                 <li className="flex items-center">
                   <Link
                     href="posts"
-                    className="block py-2 text-neutral-800 hover:text-neutral-900 hover:font-bold border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 "
+                    className="block w-full py-2 text-neutral-800 hover:text-neutral-900 hover:font-bold border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 "
                   >
                     칼럼
                   </Link>
@@ -65,7 +72,7 @@ const Headers = () => {
                   <Link
                     href="https://tally.so/r/nWEdEP"
                     target="_blank"
-                    className="block font-bold py-2 text-blue-500 hover:text-blue-600 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 "
+                    className="block w-full font-bold py-2 text-blue-500 hover:text-blue-600 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:p-0 "
                   >
                     선착순 한정 9,900원
                   </Link>

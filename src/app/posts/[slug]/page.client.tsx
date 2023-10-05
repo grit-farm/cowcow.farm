@@ -59,7 +59,7 @@ const ClientPage: FC<ClientPageProps> = ({
           </div>
         </div>
         <article
-          className="w-full mt-12 prose prose-neutral prose-img:rounded prose-a:text-cyan-500 leading-6 max-w-none"
+          className="w-full mt-12 prose prose-neutral prose-img:rounded prose-a:text-cyan-500 leading-10 max-w-none"
           dangerouslySetInnerHTML={{ __html: marked(content) }}
         ></article>
       </section>
