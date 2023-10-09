@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: "게임하며 배우는 즐거운 영어 회화",
     url: "https://cowcow.farm/",
     siteName: "카우카우 - 게임하며 배우는 즐거운 영어 회화",
-    images: ["https://cowcow.farm//images/og.png"],
+    images: ["https://cowcow.farm/images/og.png"],
     locale: "ko-KR",
     type: "website",
   },

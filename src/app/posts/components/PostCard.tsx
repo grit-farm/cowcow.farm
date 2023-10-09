@@ -17,7 +17,7 @@ const PostCard = ({ slug, heroImage, title, category, excerpt }: Props) => {
       <div className="max-w-sm w-full h-auto bg-white hover:shadow">
         <Link href={`posts/${slug}`}>
           <Image
-            className="w-full h-96"
+            className="w-full rounded-sm h-96 object-cover"
             src={heroImage}
             alt="title"
             width={400}
