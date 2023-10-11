@@ -9,13 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.36.0",
     "@types/node": "20.6.5",
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.16",
     "eslint": "8.50.0",
     "eslint-config-next": "13.5.2",
+    "firebase": "^10.4.0",
     "glob": "^10.3.7",
     "gray-matter": "^4.0.3",
     "marked": "^9.0.3",

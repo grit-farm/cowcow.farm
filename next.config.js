@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["ozdpdjrffqiiapyoinrt.supabase.co"],
+    domains: ["firebasestorage.googleapis.com"],
   },
   webpack: function (config) {
     config.module.rules.push({
